@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: rgb(240, 245, 252);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  
+}
+.title{
+ margin: 10%;
+}
+.title h2{
+  font-size: 2em;
+  text-shadow: 2px 2px 2px rgba(0,0,0,.4);
+}
+.underline{
+  height: 5px;
+  width: 50%;
+  background-color: rgb(121, 166, 199);
+  margin: auto;
+}
+
+.rewiev{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10%;
+  padding: 10%;
+  background-color: white;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.4) ;
+  border-radius: 5px;
+  height: 50vh;
+  max-width: 500px;
+}
+.img-container{
+  position: relative;
+ }
+
+.person-img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  
+}
+.quote-icon{
+  position: absolute;
+  top:5px;
+  left: 5px;
+  height: 30px;
+  width: 30px;
   color: white;
+  background-color:rgb(47, 160, 241);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.App-link {
-  color: #61dafb;
+.inner-icon{
+  font-size: .7em;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.author-name{
+  margin-top: 5%;
+}
+.job{
+  font-size: larger;
+  color:rgb(47, 160, 241) ;
+  margin-bottom: 5%;
+}
+.button-container{
+  margin-bottom: 5%;
+  
+}
+.btn{
+  margin: 5px;
+  background-color: white;
+  border: none;
+  font-size: 1em;
+  color: rgb(47, 160, 241);
+}
+.random-btn{
+  background-color:rgb(208, 234, 253) ;
+  color: rgb(21, 150, 241);
+  border-radius: 2px;
+  padding:2px;
 }
